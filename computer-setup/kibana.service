@@ -1,0 +1,11 @@
+[Unit]
+Description=Kibana 6.3.2
+
+[Service]
+Type=simple
+Environment=CONFIG_PATH=/home/asimov/Services/kibana-6.3.2-linux-x86_64/config/kibana.yml
+Environment=NODE_ENV=production
+ExecStart=/home/asimov/Services/kibana-6.3.2-linux-x86_64/bin/kibana
+
+[Install]
+WantedBy=multi-user.target
